@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joe Reitman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><b class="text-primary">Joe Reitman</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="/about.html">About Me</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <div class="navbar-brand"><a href="https://www.facebook.com/joe.reitman.9"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    </li>
+                    <li>
+                        <div class="navbar-brand">
+                            <a href="https://www.linkedin.com/pub/joe-reitman/16/63b/9a9">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar-brand">
+                            <a href="http://codepen.io/reitmanj/">
+                                <i class="fa fa-codepen" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navbar-brand">
+                            <a href="https://medium.com/@joereitman/">
+                                <i class="fa fa-medium" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    </nav>
+
+    <div class="container-fluid top-row" id="projects">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 panel panel-info">
+                <div class="panel-heading">
+                    <a href="http://www.alottoanalysis.com">Alottoanalysis.com</a>
+                </div>
+                <div class="panel-body">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/327896/Screen_Shot_2016-09-21_at_6.07.22_PM.png" class="img-responsive" alt="Screenshot of alottoanalysis.com"></img>
+                    <br>
+                    <p><a href="http://www.alottoanalysis.com" target="_blank">Alottoanalysis.com</a> is a fullstack project using Django 1.10, Python 3.4 and SQLite3. Artwork created using Adobe Illustrator. The site uses a daily tasker to web scrape current
+                        lottery information and saves it to the database. The Django-chartit plugin is used to render Highcharts. Python libraries Collections and Statistics were used for most of the calculations.
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 panel panel-info">
+                <div class="panel-heading">
+                    <a href="http://seattle911live.surge.sh/index.html">Seattle 911 Live Map</a>
+                </div>
+                <div class="panel-body">
+                    <img src="/assets/live911.png" class="img-responsive" alt="website img">
+                    <br>
+                    <p>A mashup using Google Maps, Seattle Open Data, Canvas.js charts and Broadcastify police scanner to visualize 'live' 911 incidents. The 911 data feed is delayed one hour by the provider. The scanner is real time. Info boxes pop-up with
+                        more details about the 911 incident.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-6 panel panel-info">
+                <div class="panel-heading">
+                    <a href="http://sanfranriskyrestaurants.surge.sh/">San Francisco Risky Restaurants</a></div>
+                <div class="panel-body">
+                    <img src="/assets/sanfran.png" class="img-responsive" alt="website image">
+                    <br>
+                    <p>San Francisco Open Data Restaurant Inspection results. Uses JSON static data source and Google maps API. Also make use of the DataTables plugin for jQuery. Does not work in IE</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-6 panel panel-info">
+                <div class="panel-heading">
+                    <a href="http://streamaudio.pythonanywhere.com/">YouTube Audio Streamer</a></div>
+                <div class="panel-body">
+                    <img src="/assets/streamaudio.png" class="img-responsive" alt="website image">
+                    <br>
+                    <br>
+                    <p>Search, stream and download audio from YouTube. Employs web workers to create audio streams. Utilizes HTML supplied audio controls. Chrome's audio control provides the most functionality with stream, download, and volume control. Not tested in all versions. Functionality may vary on different browsers and devices. </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/XbOGwo/">Display Local Weather</a></div>
+                <div class="panel-body">
+                    <p>Using jQuery and Javascript, this weather display accesses remote API's to gather location and weather information.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/eNxxEd/">Chuck Norris Joke Generator</a></div>
+                <div class="panel-body">
+                    <p>RESTful app accessing the Twitter API and the Internet Chuck Norris Database API to serve up random jokes that can be easily tweeted.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/XbLwRG/">Oscillator</a></div>
+                <div class="panel-body">
+                    <p>Experimenting with Web Audio API.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/vNeZZV/">Calculator</a></div>
+                <div class="panel-body">
+                    <p>A FreeCodeCamp.com challenge to build a working calculator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/pjjYpP/">WikiReader</a></div>
+                <div class="panel-body">
+                    <p>A Wikipedia search engine utilizing angular.js for display results, jQuery autocomplete for page suggestions and Wikipedia API for data source. Includes 'Feeling Lucky' button for random page.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/bVRNXO/">Guessing Game</a></div>
+                <div class="panel-body">
+                    <p>A guessing game written in Javascript. Inspired by a project completed in an introductory programming class. Originally created in Python.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-3 panel panel-info">
+                <div class="panel-heading"><a href="http://codepen.io/reitmanj/full/bdymzQ/">Pomodoro Clock</a></div>
+                <div class="panel-body">
+                    <p>Pomodoro clock written in Javascript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <!--<script src='js/scripts.js'></script>-->
+</body>
+
+</html>
